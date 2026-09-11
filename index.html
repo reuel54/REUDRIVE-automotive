@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
+    <title>AutoNova Motors | Buy New, Used, EVs & Scooters Online</title>
+    <meta name="description" content="Shop the best new cars, certified used vehicles, electric vehicles (EVs), and scooters. Easy financing, trade-ins, and home delivery available.">
+    <meta name="keywords" content="buy cars online, used cars, new cars, electric vehicles, EV, scooters, auto financing, trade-in">
+    
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #3b82f6;
+            --light: #f8fafc;
+            --text: #334155;
+        }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; margin: 0; color: var(--text); line-height: 1.6; }
+        
+        /* Navigation */
+        header { background: var(--primary); color: white; padding: 1rem 2rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        nav { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--accent); text-decoration: none; }
+        .nav-links { list-style: none; display: flex; gap: 1.5rem; margin: 0; padding: 0; }
+        .nav-links a { color: white; text-decoration: none; font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--accent); }
+
+        /* Landing Page Sections */
+        .landing-page { min-height: 80vh; padding: 4rem 2rem; max-width: 1200px; margin: 0 auto; border-bottom: 1px solid #e2e8f0; }
+        .landing-page h1 { font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem; }
+        .landing-page p.lead { font-size: 1.2rem; color: #64748b; margin-bottom: 2rem; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+        .card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .card-img { height: 200px; background: #e2e8f0; display: flex; align-items: center; justify-content: center; color: #94a3b8; font-size: 3rem; }
+        .card-body { padding: 1.5rem; }
+        .btn { display: inline-block; background: var(--accent); color: white; padding: 0.75rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: bold; margin-top: 1rem; transition: background 0.3s; }
+        .btn:hover { background: #2563eb; }
+
+        /* Cookie Banner */
+        .cookie-banner {
+            position: fixed; bottom: 0; left: 0; right: 0; background: var(--primary); color: white;
+            padding: 1.5rem; display: none; /* Hidden by default, shown via JS */
+            box-shadow: 0 -4px 10px rgba(0,0,0,0.2); z-index: 1000;
+        }
+        .cookie-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .cookie-btns { display: flex; gap: 1rem; }
+        .cookie-btn { padding: 0.5rem 1.5rem; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; }
+        .btn-accept { background: #10b981; color: white; }
+        .btn-reject { background: transparent; color: white; border: 1px solid white; }
+
+        footer { background: var(--primary); color: #94a3b8; text-align: center; padding: 2rem; }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER & NAVIGATION (HTML Links) -->
+    <header>
+        <nav>
+            <a href="#home" class="logo">AutoNova</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#new-cars">New Cars</a></li>
+                <li><a href="#used-cars">Used Cars</a></li>
+                <li><a href="#evs">Electric (EV)</a></li>
+                <li><a href="#scooters">Scooters</a></li>
+                <li><a href="#finance">Finance</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- LANDING PAGE 1: HOME / HERO -->
+        <section id="home" class="landing-page">
+            <h1>Drive Your Future Today</h1>
+            <p class="lead">From gas-powered classics to 2026 solid-state EVs and urban scooters. Find your perfect ride with zero hassle.</p>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-img">🚗</div>
+                    <div class="card-body"><h3>Browse Inventory</h3><p>Search thousands of vehicles locally and nationwide.</p><a href="#new-cars" class="btn">Start Search</a></div>
+                </div>
+                <div class="card">
+                    <div class="card-img">💰</div>
+                    <div class="card-body"><h3>Get Pre-Approved</h3><p>Check your rates in seconds without impacting your credit.</p><a href="#finance" class="btn">Apply Now</a></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LANDING PAGE 2: NEW CARS -->
+        <section id="new-cars" class="landing-page">
+            <h1>New Car Inventory</h1>
+            <p class="lead">Explore the latest models with full manufacturer warranties and cutting-edge tech.</p>
+            <div class="grid">
+                <div class="card"><div class="card-img">🚙</div><div class="card-body"><h3>SUVs & Crossovers</h3><a href="#" class="btn">View SUVs</a></div></div>
+                <div class="card"><div class="card-img">🏎️</div><div class="card-body"><h3>Sedans & Coupes</h3><a href="#" class="btn">View Sedans</a></div></div>
+                <div class="card"><div class="card-img">🛻</div><div class="card-body"><h3>Trucks</h3><a href="#" class="btn">View Trucks</a></div></div>
+            </div>
+        </section>
+
+        <!-- LANDING PAGE 3: USED CARS -->
+        <section id="used-cars" class="landing-page">
+            <h1>Certified Pre-Owned & Used</h1>
+            <p class="lead">Every used vehicle passes a rigorous 150-point inspection. Drive away with confidence.</p>
+            <div class="grid">
+                <div class="card"><div class="card-img">🔍</div><div class="card-body"><h3>Under $15,000</h3><a href="#" class="btn">Budget Picks</a></div></div>
+                <div class="card"><div class="card-img">🏆</div><div class="card-body"><h3>CPO Vehicles</h3><a href="#" class="btn">View CPO</a></div></div>
+                <div class="card"><div class="card-img">📜</div><div class="card-body"><h3>Vehicle History</h3><a href="#" class="btn">Free Carfax</a></div></div>
+            </div>
+        </section>
+
+        <!-- LANDING PAGE 4: ELECTRIC VEHICLES (EV) -->
+        <section id="evs" class="landing-page">
+            <h1>Electric Vehicles (EV)</h1>
+            <p class="lead">Join the electric revolution. Explore range, charging speeds, and 2026 tax incentives.</p>
+            <div class="grid">
+                <div class="card"><div class="card-img">⚡</div><div class="card-body"><h3>Long Range EVs</h3><a href="#" class="btn">Explore Range</a></div></div>
+                <div class="card"><div class="card-img">🔋</div><div class="card-body"><h3>Hybrids & PHEVs</h3><a href="#" class="btn">View Hybrids</a></div></div>
+                <div class="card"><div class="card-img">🔌</div><div class="card-body"><h3>Home Charging</h3><a href="#" class="btn">Charging Guide</a></div></div>
+            </div>
+        </section>
+
+        <!-- LANDING PAGE 5: SCOOTERS & MICRO-MOBILITY -->
+        <section id="scooters" class="landing-page">
+            <h1>Scooters & Urban Mobility</h1>
+            <p class="lead">Beat the traffic. High-performance electric scooters and mopeds for the modern commuter.</p>
+            <div class="grid">
+                <div class="card"><div class="card-img">🛴</div><div class="card-body"><h3>E-Scooters</h3><a href="#" class="btn">Shop Scooters</a></div></div>
+                <div class="card"><div class="card-img">🏍️</div><div class="card-body"><h3>Electric Mopeds</h3><a href="#" class="btn">Shop Mopeds</a></div></div>
+                <div class="card"><div class="card-img">⛑️</div><div class="card-body"><h3>Gear & Accessories</h3><a href="#" class="btn">Shop Gear</a></div></div>
+            </div>
+        </section>
+
+        <!-- LANDING PAGE 6 (Bonus): FINANCE & TRADE -->
+        <section id="finance" class="landing-page">
+            <h1>Financing & Trade-In</h1>
+            <p class="lead">Flexible auto loans, leasing options, and instant cash offers for your current vehicle.</p>
+            <div class="grid">
+                <div class="card"><div class="card-img">📊</div><div class="card-body"><h3>Loan Calculator</h3><a href="#" class="btn">Calculate</a></div></div>
+                <div class="card"><div class="card-img">🔄</div><div class="card-body"><h3>Trade-In Value</h3><a href="#" class="btn">Get Offer</a></div></div>
+                <div class="card"><div class="card-img">🛡️</div><div class="card-body"><h3>Extended Warranties</h3><a href="#" class="btn">Protect Ride</a></div></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AutoNova Motors. All Rights Reserved. | <a href="#" style="color: #3b82f6;">Privacy Policy</a> | <a href="#" style="color: #3b82f6;">Cookie Policy</a></p>
+    </footer>
+
+    <!-- COOKIE CONSENT BANNER -->
+    <div id="cookieBanner" class="cookie-banner">
+        <div class="cookie-content">
+            <p>🍪 We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.</p>
+            <div class="cookie-btns">
+                <button class="cookie-btn btn-reject" onclick="setCookieConsent('rejected')">Reject</button>
+                <button class="cookie-btn btn-accept" onclick="setCookieConsent('accepted')">Accept All</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT FOR COOKIES -->
+    <script>
+        // Function to set the cookie
+        function setCookieConsent(status) {
+            const d = new Date();
+            d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000)); // Expires in 1 year
+            let expires = "expires=" + d.toUTCString();
+            document.cookie = "autonova_cookie_consent=" + status + ";" + expires + ";path=/;SameSite=Lax";
+            document.getElementById('cookieBanner').style.display = 'none';
+            
+            if(status === 'accepted') {
+                console.log("Analytics and Marketing cookies enabled.");
+                // initAnalytics();
+            }
+        }
+
+        // Function to read the cookie
+        function getCookie(name) {
+            let dc = document.cookie;
+            let prefix = name + "=";
+            let begin = dc.indexOf("; " + prefix);
+            if (begin === -1) {
+                begin = dc.indexOf(prefix);
+                if (begin !== 0) return null;
+            } else {
+                begin += 2;
+            }
+            let end = document.cookie.indexOf(";", begin);
+            if (end === -1) {
+                end = dc.length;
+            }
+            return decodeURIComponent(dc.substring(begin + prefix.length, end));
+        }
+
+        // Check on page load
+        window.onload = function() {
+            if (getCookie("autonova_cookie_consent") === null) {
+                document.getElementById('cookieBanner').style.display = 'block';
+            }
+        };
+    </script>
+</body>
+</html>
